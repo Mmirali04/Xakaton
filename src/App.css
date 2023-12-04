@@ -1,0 +1,47 @@
+
+
+.hero{
+    background-image: url(./assets/left.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero2{
+    background-image: url(./assets/bg3.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.hero3{
+    background-image: url(./assets/setka.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.hero4{
+    background-image: url(./assets/elip1.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.frame{
+    background-image: url(./assets/frame2.svg);
+    width: 100%;
+    background-size: cover;
+}
+
+.krug{
+    border-radius: 50%;
+    border: 5px solid blue;
+}
+
+.brd{
+border: 0 solid gray;
+}
