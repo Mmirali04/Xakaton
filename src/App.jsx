@@ -337,7 +337,7 @@ const App = () => {
                   <img src={locationn} className="sm:m-[auto] lg:m-[0]" alt="" />
                 </div>
                 <div>
-                <p className="text-[22px]">Адрес: Республика Таджикистан, город Душанбе, улица Назаршоева, 7, адрес </p>
+                <p className="text-[22px]">Адрес: Республика Таджикистан, город Душанбе, улица Назаршоева, 7 </p>
                 </div>
               </div>
 
@@ -355,7 +355,7 @@ const App = () => {
                   <img src={phone} className="sm:m-[auto] lg:m-[0] " alt="" />
                 </div>
                 <div>
-                <p className="text-[22px]">Номер телефона: +992 37 222 20 06 </p>
+                <p className="text-[22px]">Контактные номера: +992 37 222 20 06 </p>
                 </div>
               </div>
             </div>
