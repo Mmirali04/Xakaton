@@ -43,5 +43,7 @@
 }
 
 .brd{
-border: 0 solid gray;
+    border: 0 solid gray;
+    background: transparent;
 }
+

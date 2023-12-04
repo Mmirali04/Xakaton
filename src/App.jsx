@@ -5,10 +5,21 @@ import roket from "./assets/roket.svg"
 import locationn from "./assets/location.svg"
 import mail from "./assets/mail.svg"
 import phone from "./assets/phone.svg"
+import brain from "./assets/brain.svg"
 
 
 import "./App.css"
 import Switcher from "./components/Switcher/Switcher"
+
+
+// Acordion 
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+
 const App = () => {
 
   return (
@@ -16,7 +27,7 @@ const App = () => {
       <div className='sm:pb-[120px] lg:pb-[0px] '>
         <div className='hero'> 
           <div className=' ml-[13%] m-[auto]'>
-            <div className='logo  flex justify-between w-[80%] items-center '>
+            <div className='logo  flex justify-between w-[85%] items-center '>
               <div className="pt-[20px] flex items-center">
                 <div>
                  <img src={logo} className="h-[130px]" alt="" />
@@ -40,12 +51,14 @@ const App = () => {
                 <p className="text-[gray] w-[80%]">Регистрируйся и создавай уникальный продукт в сфере в IT–сфере, искусственного интеллекта, нейронных сетей, дизайна и управления</p>
                 <p className="text-[#3a30c9] mt-[20px]">Дата проведения - 14 декабря 2023 года</p>
                 <div className="mt-[30px]">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCrA1CHDbsgoBhbF_FyDGlc2TxpGnicNEOeRIX9XwCRgTPIA/viewform">
                     <button className="lg:w-[320px] sm:w-[280px] h-[60px] rounded-[10px] bg-[#3a30c9] text-[22px] text-[white] font-[700]">Принять участие</button>
+                  </a>
                 </div>
             </div>
             <div className="hero2">
             <div>
-              <img className="lg:block sm:hidden" src={code} alt="" />
+              <img className="lg:block sm:hidden" src={brain} alt="" />
             </div>
             </div>
           </div>
@@ -208,6 +221,114 @@ const App = () => {
 
 
 {/* VOPROSI */}
+
+
+
+        
+      <div className="dark:bg-[#171717]">
+          <div className=" pt-[100px] pb-[100px]">
+            <div>
+              <p className="text-[40px] text-center font-[700]">Часто задаваемые вопросы</p>
+            </div>
+
+            <div className="w-[80%] m-[auto]"> 
+            <div>
+      <Accordion  className="mt-[40px]" sx={{background :"transparent" , border : "1px solid gray"}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon  className="dark:text-[white]"/>}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+          
+        >
+          <Typography  className="dark:text-[white]"> Какова минимальная и максимальная численность участников в команде для участия в хакатоне?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="dark:text-[white]">
+          Команды могут включать от трех до семи человек
+          </Typography>
+        </AccordionDetails>
+      </Accordion >
+      <Accordion sx={{background :"transparent" , border : "1px solid gray"}} className="mt-[20px]">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon className="dark:text-[white]" />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className="dark:text-[white]">Сколько кейсовых заданий необходимо представить при проведении хакатона, и существует ли ограничение на максимальное количество заданий?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="dark:text-[white]">
+          Проведение хакатона предполагает представление к решению не менее одного и не более трёх кейсовых заданий
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion sx={{background :"transparent" , border : "1px solid gray"}} className="mt-[20px]">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon className="dark:text-[white]" />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className="dark:text-[white]"> Кто может участвовать в хакатоне, и какие требования к участникам?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="dark:text-[white]">
+          Участник хакатона – физическое лицо, являющееся гражданином Таджикистана, достигшее возраста 18 лет, обладающее компетенциями в сфере разработки решений на основе технологий искусственного интеллекта, изъявившее интерес к участию в хакатоне.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion sx={{background :"transparent" , border : "1px solid gray"}} className="mt-[20px]">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon className="dark:text-[white]" />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className="dark:text-[white]"> Когда должна быть опубликована дата проведения хакатона, и где можно найти эту информацию?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="dark:text-[white]">
+          Дата проведения хакатона подлежит публикации на официальном сайте не позднее 7 календарных дней до даты начала проведения хакатона
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion sx={{background :"transparent" , border : "1px solid gray"}} className="mt-[20px]">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon className="dark:text-[white]" />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className="dark:text-[white]">Когда и где будут опубликованы правила и форматы проведения хакатона, и сколько времени будет предоставлено для ознакомления участникам перед началом мероприятия?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="dark:text-[white]">
+          Правила и форматы проведения хакатона подлежат публикации на официальном сайте не менее чем за 7 календарных дней до даты начала проведения хакатона 
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion sx={{background :"transparent" , border : "1px solid gray"}} className="mt-[20px]">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon className="dark:text-[white]" />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className="dark:text-[white]">Когда будет опубликовано расписание хакатона, и где участники могут найти эту информацию, чтобы быть в курсе событий?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="dark:text-[white]">
+          Расписание хакатона подлежит публикации на официальном сайте не позднее чем за 1 день до даты проведения
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      
+    </div>
+            </div>
+
+          </div>
+        </div>
+
 
         <div className=" bg-[#EEEEEE] dark:bg-[#2A2A2A] ">
           <div className="pt-[50px] pb-[50px] text-center m-[auto]">
