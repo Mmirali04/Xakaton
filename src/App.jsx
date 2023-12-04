@@ -24,11 +24,11 @@ const App = () => {
 
   return (
     <div className="dark:bg-[#121212] dark:text-white">
-      <div className='sm:pb-[120px] lg:pb-[0px] '>
+      <div className=' lg:pb-[0px] '>
         <div className='hero'> 
-          <div className=' ml-[13%] m-[auto]'>
+          <div className=' m-[auto]'>
             <div className='logo  flex justify-between w-[85%] items-center '>
-              <div className="pt-[20px] flex items-center">
+              <div className="pt-[20px] flex items-center sm:ml-[13%] ">
                 <div>
                  <img src={logo} className="h-[130px]" alt="" />
                 </div>
@@ -44,21 +44,21 @@ const App = () => {
               </div>
             </div>
 
-            <div className="flex">
-            <div className="lg:w-[60%]">
+            <div className="lg:flex ">
+            <div className="lg:w-[60%] sm:ml-[13%]">
                 <p className=" font-[700] lg:text-[129px] md:text-[100px] sm:text-[70px]">Хакатон</p>
                 <p className="lg:text-[72px] md:text-[62px] sm:text-[50px]"> ДФ НИТУ МИСИС</p>
                 <p className="text-[gray] w-[80%]">Регистрируйся и создавай уникальный продукт в сфере в IT–сфере, искусственного интеллекта, нейронных сетей, дизайна и управления</p>
-                <p className="text-[#3a30c9] mt-[20px]">Дата проведения - 14 декабря 2023 года</p>
+                <p className="text-[#a19dd5] mt-[20px]">Дата проведения - 14 декабря 2023 года</p>
                 <div className="mt-[30px]">
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCrA1CHDbsgoBhbF_FyDGlc2TxpGnicNEOeRIX9XwCRgTPIA/viewform">
                     <button className="lg:w-[320px] sm:w-[280px] h-[60px] rounded-[10px] bg-[#3a30c9] text-[22px] text-[white] font-[700]">Принять участие</button>
                   </a>
                 </div>
             </div>
-            <div className="hero2">
+            <div className="hero2 pb-[100px]">
             <div>
-              <img className="lg:block sm:hidden" src={brain} alt="" />
+              <img className="lg:block sm:m-[auto] " src={brain} alt="" />
             </div>
             </div>
           </div>
